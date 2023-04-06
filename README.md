@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [click here](https://your-solution-url.com)
-- Live Site URL: [click here](https://your-live-site-url.com)
+- Solution URL: [click here](https://github.com/fiqihalfito/IP-address-tracker)
+- Live Site URL: [click here](https://ip-address-tracker-fiqih.vercel.app/)
 
 ## My process
 
