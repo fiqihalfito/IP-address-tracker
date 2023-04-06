@@ -10,6 +10,9 @@ module.exports = {
     extend: {
       fontFamily: {
         rubik: ["var(--font-rubik)"]
+      },
+      backgroundImage: {
+        mobile: "url('/images/pattern-bg-mobile.png')"
       }
     },
   },
