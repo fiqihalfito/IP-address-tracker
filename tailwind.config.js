@@ -12,7 +12,8 @@ module.exports = {
         rubik: ["var(--font-rubik)"]
       },
       backgroundImage: {
-        mobile: "url('/images/pattern-bg-mobile.png')"
+        mobile: "url('/images/pattern-bg-mobile.png')",
+        desktop: "url('/images/pattern-bg-desktop.png')"
       }
     },
   },
