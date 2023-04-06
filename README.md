@@ -52,7 +52,9 @@ Users should be able to:
 
 ### What I learned
 
-Using Fetch API in Client Component. I thought it will be a bug because Next.js warned not to use Fetch API in Client Component. Otherwise, use third-party libraries such as SWR or React Query.
+Firstly - Using Fetch API in Client Component. I thought it will be a bug because Next.js warned not to use Fetch API in Client Component. Otherwise, use third-party libraries such as SWR or React Query.
+
+Secondly - When I build the app, it showed warning that shows "window is not defined". I found out that Next.js is Server side rendering, meanwhile Leaflet Map can render when all elements are loaded. So We have to use Lazy Loading Next.js. it makes Map Component delays the rendering until all element is sent into client, so that Map can be rendered properly. 
 
 
 ## Author
