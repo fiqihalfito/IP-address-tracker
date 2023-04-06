@@ -3,8 +3,11 @@ import Image from "next/image";
 import arrowIcon from "../../public/images/icon-arrow.svg"
 import InfoSegment from "@/components/InfoSegment";
 import { useEffect, useState } from "react";
-import MyMap from "@/components/MyMap";
+// import MyMap from "@/components/MyMap";
 import 'leaflet/dist/leaflet.css'
+import dynamic from "next/dynamic";
+
+const MyMap = dynamic(() => import('@/components/MyMap'), { ssr: false })
 
 async function getLocation(ipAddress) {
     const url = ipAddress ? `https://ipapi.co/${ipAddress}/json/` : 'https://ipapi.co/json/'
@@ -27,6 +30,7 @@ export default function Home() {
         status: false,
         reason: null
     })
+    const [isRendered, setIsRendered] = useState(false)
 
     useEffect(() => {
         async function fetchData() {
@@ -117,6 +121,7 @@ export default function Home() {
                 </div>
 
                 <MyMap center={[ipData.latitude, ipData.longitude]} lat={ipData.latitude} long={ipData.longitude} />
+
 
             </div>
         </div>
